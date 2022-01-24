@@ -1,0 +1,15 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  application:
+    name: ChatApp
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/chatt_app?createDatabaseIfNotExist=true
+    username: root
+    password: Root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+server:
+  port: 8888
+
